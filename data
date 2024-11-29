@@ -1,4 +1,0 @@
-mkdir data
-mv /path/to/downloaded/files/* data/
-
-
