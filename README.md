@@ -2,8 +2,10 @@
 
 ■ Group Members: 
 
-NAME : RUDRAPRATAPSINH VAGHELA ,  NAME : KAVY SHARMA
-Ku id: KU2407U674              ,  Ku id: KU2407U314
+NAME : RUDRAPRATAPSINH VAGHELA , Ku id: KU2407U674 
+NAME : KAVY SHARMA             , Ku id: KU2407U314
+             
+             
 
 Migration Patterns: Global and India-Specific Analysis
 
