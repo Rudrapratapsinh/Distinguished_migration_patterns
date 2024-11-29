@@ -2,15 +2,24 @@
 from dash import Dash, dcc, html, Input, Output, dash_table
 import plotly.graph_objects as go
 import pandas as pd
+import os
 
-# Load sample data for migration patterns
-data = {
-    "Source": ["Asia", "Asia", "Africa", "Europe", "South America"],
-    "Destination": ["North America", "Europe", "Europe", "North America", "Europe"],
-    "Migrants": [10500000, 5000000, 6200000, 7800000, 4500000],
-    "Year": [2015, 2016, 2017, 2018, 2019]
-}
-df = pd.DataFrame(data)
+# Ensure the data directory exists
+os.makedirs("data", exist_ok=True)
+
+# Check if the data file exists, if not, create it
+file_path = "data/migration_data.csv"
+if not os.path.exists(file_path):
+    data = {
+        "Source": ["USA", "India", "Germany", "China", "Canada", "UK", "France", "Brazil", "Australia", "Japan"],
+        "Destination": ["Canada", "USA", "USA", "India", "UK", "Germany", "Brazil", "USA", "USA", "China"],
+        "Year": [2010, 2010, 2011, 2011, 2012, 2012, 2013, 2013, 2014, 2014],
+        "Migrants": [150000, 200000, 180000, 300000, 120000, 220000, 140000, 190000, 170000, 160000],
+    }
+    pd.DataFrame(data).to_csv(file_path, index=False)
+
+# Load migration data from a CSV file
+df = pd.read_csv(file_path)
 
 # Initialize the Dash app
 app = Dash(__name__)
@@ -32,7 +41,7 @@ fig_sankey = go.Figure(go.Sankey(
         value=df['Migrants']
     )
 ))
-fig_sankey.update_layout(title_text="Migration Flow Between Regions", font_size=10)
+fig_sankey.update_layout(title_text="Migration Flow Between Countries", font_size=10)
 
 # Time-series trend
 fig_line = go.Figure()
@@ -86,4 +95,3 @@ app.layout = html.Div([
 # Run the app
 if __name__ == "__main__":
     app.run_server(debug=True)
-
