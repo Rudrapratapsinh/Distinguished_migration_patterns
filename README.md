@@ -7,19 +7,18 @@ Ku id: KU2407U674              ,  Ku id: KU2407U314
 
 Migration Patterns: Global and India-Specific Analysis
 
-Objective of the Project
+1. Objective of the Project
 
-This project explores migration patterns globally, with a focus on India. It aims to identify key trends, drivers, and impacts of migration, using data analysis and visualization to provide insights into migration flows, demographics, and socio-economic factors.
+This project explores migration patterns globally, with a focus on India. It aims to identify key trends, drivers, and impacts of migration, 
+using data analysis and visualization to provide insights into migration flows, demographics, and socio-economic factors.
 
-Tools and Libraries Used
+2. Tools and Libraries Used
 
 Python: Core programming language
 
 Pandas: Data manipulation and analysis
 
 NumPy: Numerical computations
-
-Matplotlib and Seaborn: Data visualization
 
 Geopandas: Geospatial data handling
 
@@ -28,7 +27,7 @@ Jupyter Notebook: Interactive data exploration
 SQL: Data querying and manipulation (optional)
 
 
-Data Source(s)
+3. Data Source(s)
 
 UN Migration Data Portal: Global migration statistics
 
