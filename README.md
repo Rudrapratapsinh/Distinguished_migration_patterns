@@ -1,12 +1,9 @@
-■ Project Title: Migration Patterns: Global and India-Specific Analysis
+
+# Migration Patterns Analysis
 
 ## Contributors
 - RUDRAPRATAPSINH VAGHELA - [KU2407U674]
 - KAVYA SHARMA            - [KU2407U314]
-
-
-
-# Migration Patterns Analysis
 
 ## Table of Contents
 1. [Introduction]
